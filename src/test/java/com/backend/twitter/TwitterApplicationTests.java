@@ -1,4 +1,4 @@
-package com.example.twitter;
+package com.backend.twitter;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;

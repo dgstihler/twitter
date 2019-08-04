@@ -68,12 +68,12 @@ public class OAuth2ServerConfiguration extends ResourceServerConfigurerAdapter {
         @Override
         public void configure(ClientDetailsServiceConfigurer clients)throws Exception{
             clients.inMemory()
-            .withClient("client")
-            .authorizedGrantTypes("password", "authorization_code", "refresh_token").scopes("all")
-            .refreshTokenValiditySeconds(300000)
-            .resourceIds(RESOURCE_ID)
-            .secret(passwordEncoder.encode("123"))
-            .accessTokenValiditySeconds(50000);
+                    .withClient("client")
+                    .authorizedGrantTypes("password", "authorization_code", "refresh_token").scopes("all")
+                    .refreshTokenValiditySeconds(300000)
+                    .resourceIds(RESOURCE_ID)
+                    .secret(passwordEncoder.encode("123"))
+                    .accessTokenValiditySeconds(50000);
         }
 
 

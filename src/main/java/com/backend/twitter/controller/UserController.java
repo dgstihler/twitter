@@ -1,6 +1,5 @@
 package com.backend.twitter.controller;
 
-
 import com.backend.twitter.entity.User;
 import com.backend.twitter.repository.UserRepository;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -17,7 +16,7 @@ public class UserController {
     UserRepository userRepository;
 
 
-    @Secured({"VIP"})
+    @Secured({"ROLE_ADMIN", "ROLE_FREE"})
     @RequestMapping(value = "", method = RequestMethod.GET)
     public List<User> list() {
         return userRepository.findAll();

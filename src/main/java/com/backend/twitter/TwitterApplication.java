@@ -1,4 +1,4 @@
-package com.example.twitter;
+package com.backend.twitter;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

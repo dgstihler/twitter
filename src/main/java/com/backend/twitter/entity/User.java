@@ -1,6 +1,5 @@
 package com.backend.twitter.entity;
 
-
 import lombok.Getter;
 import lombok.Setter;
 

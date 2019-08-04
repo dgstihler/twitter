@@ -32,8 +32,8 @@ public class Initializer implements ApplicationListener<ContextRefreshedEvent> {
 
         List<User> users = userRepository.findAll();
         if(users.isEmpty()){
-            this.createUsers("Galdino", "dgstihler@gmail.com", passwordEncoder.encode("123456"), "FREE");
-            this.createUsers("Amanda", "admin", passwordEncoder.encode("123456"), "VIP");
+            this.createUsers("Galdino", "dgstihler@gmail.com", passwordEncoder.encode("123456"), "ROLE_FREE");
+            this.createUsers("Amanda", "admin", passwordEncoder.encode("123456"), "ROLE_ADMIN");
         }
 
     }
